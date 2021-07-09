@@ -30,7 +30,10 @@ print(words)
     
 words = capitalize(words);
 
-max_num = max(numbers)
-numbers_pow = numbers
-numbers_pow.remove(max_num)
-numbers_pow = [x ** i for i, x in enumerate(numbers_pow)]
+if len(numbers)>0:
+    max_num = max(numbers)
+    numbers_pow = numbers
+    numbers_pow.remove(max_num)
+    numbers_pow = [x ** i for i, x in enumerate(numbers_pow)]
+else:
+    numbers_pow = []
